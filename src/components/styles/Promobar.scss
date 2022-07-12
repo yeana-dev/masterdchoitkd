@@ -1,0 +1,15 @@
+.promobar {
+  background-color: #9D2424;
+
+  &__text {
+    max-width: 1240px;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    padding: 0 30px;
+  }
+}

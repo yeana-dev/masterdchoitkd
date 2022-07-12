@@ -1,0 +1,40 @@
+.banner {
+  &__overlay,
+  &__header-text {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    &__overlay {
+    background: url(../../assets/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+
+    &__header-text {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 50px;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    button {
+      font-family: 'Roboto', sans-serif;
+      border: none;
+      padding: 15px 25px;
+      background-color: #BE2C2C;
+      color: white;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 12px;
+    }
+  }
+}
