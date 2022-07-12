@@ -1,5 +1,6 @@
 import Navigation from './Navigation';
 import Promobar from '../components/Promobar';
+import Footer from './Footer';
 
 export default function Layout(props) {
   return (
@@ -7,6 +8,7 @@ export default function Layout(props) {
       <Promobar />
       <Navigation />
       {props.children}
+      <Footer />
     </>
   )
 }
