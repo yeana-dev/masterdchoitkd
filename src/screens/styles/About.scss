@@ -1,28 +1,4 @@
 .about {
-  header {
-    background-image: url(../../assets/main_image.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 150px;
-
-    .heading-container {
-      background-color: rgba(0, 0, 0, 0.3);
-      width: 100%;
-      height: 150px;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      h1 {
-        font-family: 'Rubik', sans-serif;
-        font-size: 40px;
-        text-transform: uppercase;
-        letter-spacing: 10px;
-      }
-    }
-  }
-
   main {
     background-color: black;
     display: flex;

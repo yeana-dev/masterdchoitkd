@@ -1,7 +1,9 @@
+import Header from '../components/Header';
+
 export default function Programs() {
   return (
     <div>
-      I am programs page
+      <Header text={'Programs'} />
     </div>
-  )
+  );
 }

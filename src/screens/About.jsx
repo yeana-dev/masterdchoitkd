@@ -1,15 +1,12 @@
 import './styles/About.scss';
+import Header from '../components/Header';
 
 import masterdchoi from '../assets/masterdchoi.jpeg';
 
 export default function About() {
   return (
     <div className='about'>
-      <header>
-        <div className='heading-container'>
-          <h1>About Us</h1>
-        </div>
-      </header>
+      <Header text={"About Us"} />
       <main>
         <div className='image-container'>
           <img src={masterdchoi} alt='Portrait of Master D. Choi' />

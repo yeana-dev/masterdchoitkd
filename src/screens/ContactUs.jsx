@@ -1,7 +1,9 @@
+import Header from '../components/Header';
+
 export default function ContactUs() {
   return (
     <div>
-      I am Contact Us page
+      <Header text={'Contact Us'} />
     </div>
-  )
+  );
 }

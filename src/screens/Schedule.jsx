@@ -1,7 +1,9 @@
+import Header from '../components/Header';
+
 export default function Schedule() {
   return (
     <div>
-      I am schedule page
+      <Header text={'Schedule'} />
     </div>
-  )
+  );
 }
