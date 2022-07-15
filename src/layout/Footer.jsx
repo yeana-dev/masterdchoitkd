@@ -57,7 +57,7 @@ export default function Footer() {
               <b>Monday - Friday</b> 2 PM - 9 PM
             </p>
             <p>
-              <b>Saturday</b> 2 PM - 9 PM
+              <b>Saturday</b> 9 AM - 1 PM
             </p>
             <p>
               <b>Sunday</b> Closed
