@@ -1,5 +1,4 @@
 import './styles/Home.scss';
-import Banner from '../components/Banner';
 
 import adult from '../assets/adult.jpeg';
 import family from '../assets/family.jpeg';
@@ -11,8 +10,8 @@ export default function Home() {
     <div className='home'>
       <div className='home__overlay'>
         <section className='home__header-text'>
-          <h1>Welcome to Master D. Choi Taekwondo</h1>
-          {/* <h2>Placeholder text goes here</h2> */}
+          <h1>Welcome to Master D. Choi Taekwondo!</h1>
+          <h2>Coming to Richmond, TX</h2>
           <button>Click to contact us!</button>
         </section>
       </div>
@@ -75,7 +74,6 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <Banner />
     </div>
   );
 }
