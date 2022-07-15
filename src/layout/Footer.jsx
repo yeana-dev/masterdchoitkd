@@ -1,16 +1,28 @@
 import './styles/Footer.scss';
 
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   return (
     <footer>
       <div className='footer-container'>
         <section className='footer-menu__left'>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Programs</li>
-            <li>Schedule</li>
-            <li>Contact Us</li>
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
+            <li>
+              <Link to='/about'>About</Link>
+            </li>
+            <li>
+              <Link to='/programs'>Programs</Link>
+            </li>
+            <li>
+              <Link to='/schedule'>Schedule</Link>
+            </li>
+            <li>
+              <Link to='/contact-us'>Contact Us</Link>
+            </li>
           </ul>
           <p className='copyright'>
             Copyright © Master D. Choi Taekwondo 2022. All rights reserved.
@@ -35,7 +47,7 @@ export default function Footer() {
               href='mailto:info@masterdchoi.com'
               target='_blank'
               rel='noreferrer'
-              >
+            >
               info@masterdchoi.com
             </a>
           </p>

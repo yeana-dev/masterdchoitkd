@@ -1,6 +1,8 @@
 import logo from '../assets/logo_title.png';
 import './styles/Navigation.scss';
 
+import { Link } from 'react-router-dom';
+
 export default function Navigation() {
   return (
     <nav className='navbar'>
@@ -9,11 +11,21 @@ export default function Navigation() {
       </div>
       <div className='navbar__menu'>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Programs</li>
-          <li>Schedule</li>
-          <li>Contact Us</li>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/about'>About</Link>
+          </li>
+          <li>
+            <Link to='/programs'>Programs</Link>
+          </li>
+          <li>
+            <Link to='/schedule'>Schedule</Link>
+          </li>
+          <li>
+            <Link to='/contact-us'>Contact Us</Link>
+          </li>
         </ul>
       </div>
     </nav>
