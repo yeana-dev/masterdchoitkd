@@ -58,6 +58,15 @@ footer {
         p {
           font-size: 14px;
           line-height: 30px;
+
+          a {
+            color: white;
+            text-decoration: none;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
