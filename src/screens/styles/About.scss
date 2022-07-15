@@ -1,0 +1,85 @@
+.about {
+  header {
+    background-image: url(../../assets/main_image.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+
+    .heading-container {
+      background-color: rgba(0, 0, 0, 0.3);
+      width: 100%;
+      height: 150px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+      }
+    }
+  }
+
+  main {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+    .image-container,
+    section {
+      max-width: 602px;
+    }
+
+    .image-container {
+      img {
+        max-width: 620px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    section {
+      background-color: white;
+      padding: 30px;
+
+      .bio-container {
+        h2 {
+          font-family: 'Rubik', sans-serif;
+          font-size: 40px;
+          text-transform: uppercase;
+          border-bottom: 1px solid black;
+          letter-spacing: -2px;
+        }
+
+        p {
+          padding: 30px 0;
+          line-height: 30px;
+          border-bottom: 1px solid black;
+          margin-bottom: 30px;
+        }
+      }
+
+      ul li {
+        list-style: none;
+        margin-bottom: 12px;
+
+        .year {
+          font-weight: 800;
+          font-size: 18px;
+          display: block;
+          margin-bottom: 4px;
+          color: #BE2C2C;
+          letter-spacing: -1px;
+        }
+
+        p {
+          font-size: 15px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
