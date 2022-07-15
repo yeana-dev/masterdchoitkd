@@ -17,11 +17,20 @@
   &__header-text {
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
+
+    h1,
+    h2 {
+      font-family: 'Rubik', sans-serif;
+    }
     
     h1 {
-      font-family: 'Rubik', sans-serif;
       font-size: 48px;
-      margin-bottom: 50px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
     }
 
     button {
