@@ -1,9 +1,9 @@
 import './styles/Home.scss';
 
-import adult from '../assets/adult.jpeg';
-import family from '../assets/family.jpeg';
-import little_tiger from '../assets/little_tiger.jpeg';
-import youth from '../assets/youth.jpeg';
+import adult from '../assets/adult.jpg';
+import family from '../assets/family.jpg';
+import little_tiger from '../assets/little_tiger.jpg';
+import youth from '../assets/youth.jpg';
 
 export default function Home() {
   return (
