@@ -51,15 +51,45 @@
       .input-container {
         display: flex;
         flex-wrap: wrap;
+        gap: 20px;
 
-        &__name, &__phone {
-          input {
-            flex: 1 1 auto;
+        &__name,
+        &__contact {
+          flex: 1 1 auto;
+        }
+
+        &__message {
+          width: 100%;
+        }
+
+        &__name,
+        &__contact,
+        &__message {
+          label {
+            font-size: 14px;
+          }
+
+          input, textarea {
+            border: none;
+            width: 100%;
+            background-color: #e5e5e5;
+            padding: 10px 15px;
+            border-radius: 5px;
+            resize: none;
           }
         }
 
-        input, textarea {
-          width: 100%;
+        .submit {
+          margin-left: auto;
+          display: block;
+          background-color: #3751DC;
+          color: white;
+          border: none;
+          padding: 15px 35px;
+          font-size: 16px;
+          border-radius: 15px;
+          text-transform: uppercase;
+          font-family: 'Rubik', sans-serif;
         }
       }
     }

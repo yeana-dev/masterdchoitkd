@@ -56,15 +56,15 @@ export default function ContactUs() {
               <label for='name'>Name</label>
               <input type='text' id='name' />
             </div>
-            <div className='input-container__phone'>
-              <label for='phone'>Phone Number</label>
-              <input type='tel' id='phone' />
+            <div className='input-container__contact'>
+              <label for='contact'>Phone Number or Email</label>
+              <input type='text' id='contact' />
             </div>
             <div className='input-container__message'>
               <label for='message'>Message</label>
-              <textarea id='message' />
+              <textarea id='message' rows="7" />
             </div>
-            <input type='submit' />
+            <input type='submit' class="submit" />
           </div>
         </section>
       </div>
