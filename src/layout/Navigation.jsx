@@ -7,7 +7,9 @@ export default function Navigation() {
   return (
     <nav className='navbar'>
       <div className='navbar__logo'>
-        <img src={logo} alt='logo' className='logo' />
+        <Link to='/'>
+          <img src={logo} alt='logo' className='logo' />
+        </Link>
       </div>
       <div className='navbar__menu'>
         <ul>
