@@ -1,7 +1,42 @@
+import { useState } from 'react';
 import Header from '../components/Header';
 import './styles/ContactUs.scss';
 
+import emailjs from '@emailjs/browser';
+
 export default function ContactUs() {
+  const [name, setName] = useState('');
+  const [contact, setContact] = useState('');
+  const [message, setMessage] = useState('');
+  const [btnText, setBtnText] = useState('Submit');
+
+  const emailParams = {
+    name: name,
+    contact: contact,
+    message: message,
+  };
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(emailParams);
+    emailjs
+      .send(
+        'service_iiwc60s',
+        'template_2tmy79s',
+        emailParams,
+        'user_YOH18ApgTgggDNs7eGZD9'
+      )
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          setBtnText('Sent');
+        },
+        (err) => {
+          console.log('FAILED...', err);
+        }
+      );
+  }
+
   return (
     <div className='contact-us'>
       <Header text={'Contact Us'} />
@@ -51,30 +86,45 @@ export default function ContactUs() {
         </section>
         <section className='contact-us__top--right'>
           <h3>Message</h3>
-          <div className='input-container'>
+          <form className='input-container' onSubmit={(e) => handleSubmit(e)}>
             <div className='input-container__name'>
-              <label for='name'>Name</label>
-              <input type='text' id='name' />
+              <label htmlFor='name'>Name</label>
+              <input
+                type='text'
+                id='name'
+                name='name'
+                onChange={(e) => setName(e.target.value)}
+              />
             </div>
             <div className='input-container__contact'>
-              <label for='contact'>Phone Number or Email</label>
-              <input type='text' id='contact' />
+              <label htmlFor='contact'>Phone Number or Email</label>
+              <input
+                type='text'
+                id='contact'
+                name='contact'
+                onChange={(e) => setContact(e.target.value)}
+              />
             </div>
             <div className='input-container__message'>
-              <label for='message'>Message</label>
-              <textarea id='message' rows="7" />
+              <label htmlFor='message'>Message</label>
+              <textarea
+                id='message'
+                rows='7'
+                name='message'
+                onChange={(e) => setMessage(e.target.value)}
+              />
             </div>
-            <input type='submit' class="submit" />
-          </div>
+            <input type='submit' className={`submit ${btnText}`} value={btnText} />
+          </form>
         </section>
       </div>
       <div className='contact-us__google-map'>
         <iframe
           src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.341667012122!2d-95.7034563!3d29.651858299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e14b3c251c25%3A0x2413a27871aef121!2sMaster%20D%20Choi&#39;s%20World%20Champion%20Taekwondo!5e0!3m2!1sen!2sus!4v1657931703892!5m2!1sen!2sus'
           style={{ border: '0' }}
-          allowfullscreen=''
+          allowFullScreen=''
           loading='lazy'
-          referrerpolicy='no-referrer-when-downgrade'
+          referrerPolicy='no-referrer-when-downgrade'
           title='Google Map'
         ></iframe>
       </div>
