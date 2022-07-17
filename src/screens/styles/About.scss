@@ -4,14 +4,13 @@
     display: flex;
     justify-content: center;
 
-    .image-container,
-    section {
-      max-width: 602px;
+    .image-container {
+      max-width: 500px;
     }
 
     .image-container {
       img {
-        max-width: 620px;
+        max-width: 500px;
         height: 100%;
         object-fit: cover;
       }
@@ -20,6 +19,7 @@
     section {
       background-color: white;
       padding: 30px;
+      max-width: 800px;
 
       .bio-container {
         h2 {
