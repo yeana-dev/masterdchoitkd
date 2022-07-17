@@ -35,6 +35,13 @@
       text-transform: uppercase;
       letter-spacing: 5px;
       font-size: 12px;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+
+      &:hover {
+        background-color: #3751DC;
+        transition: all 0.15s ease-in-out;
+      }
     }
   }
 }
