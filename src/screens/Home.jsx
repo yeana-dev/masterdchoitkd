@@ -29,7 +29,7 @@ export default function Home() {
                 a child’s development. We focus on confidence, self control,
                 behavior, and improving following directions.
               </p>
-              <button>Learn More</button>
+              {/* <button>Learn More</button> */}
             </section>
           </div>
           <div className='program-card'>
@@ -42,7 +42,7 @@ export default function Home() {
                 self-discipline, self control, focus, self defense, and learn to
                 never give up to reach for success!
               </p>
-              <button>Learn More</button>
+              {/* <button>Learn More</button> */}
             </section>
           </div>
           <div className='program-card'>
@@ -55,7 +55,7 @@ export default function Home() {
                 confidence, improved self-esteem, focus, and self-discipline.
                 Improved flexibility, improved agility and reflexes.
               </p>
-              <button>Learn More</button>
+              {/* <button>Learn More</button> */}
             </section>
           </div>
           <div className='program-card'>
@@ -69,7 +69,7 @@ export default function Home() {
                 program provides the perfect opportunity to share the many
                 benefits Taekwondo offers for families.
               </p>
-              <button>Learn More</button>
+              {/* <button>Learn More</button> */}
             </section>
           </div>
         </section>
