@@ -7,7 +7,15 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    color: white;
     padding: 10px 30px;
+    color: white;
+
+    a {
+      color: white;
+
+      &:hover {
+        color: white;
+      }
+    }
   }
 }

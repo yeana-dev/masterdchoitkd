@@ -5,6 +5,10 @@
     padding: 0 30px;
     display: flex;
 
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+
     h3 {
       color: #BE2C2C;
       font-family: 'Rubik', sans-serif;
@@ -16,7 +20,10 @@
     }
 
     &--left {
-      margin-right: 50px;
+      @media screen and (min-width: 992px) {
+        margin-right: 50px;
+      }
+      
       .hours {
         &--info {
           p {
