@@ -6,13 +6,13 @@ import emailjs from '@emailjs/browser';
 
 export default function ContactUs() {
   const [name, setName] = useState('');
-  const [contact, setContact] = useState('');
+  const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [btnText, setBtnText] = useState('Submit');
 
   const emailParams = {
     name: name,
-    contact: contact,
+    email: email,
     message: message,
   };
 
@@ -93,16 +93,18 @@ export default function ContactUs() {
                 type='text'
                 id='name'
                 name='name'
+                required
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className='input-container__contact'>
-              <label htmlFor='contact'>Phone Number or Email</label>
+              <label htmlFor='contact'>Email Address</label>
               <input
-                type='text'
-                id='contact'
-                name='contact'
-                onChange={(e) => setContact(e.target.value)}
+                type='email'
+                id='email'
+                name='email'
+                required
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className='input-container__message'>
@@ -111,6 +113,7 @@ export default function ContactUs() {
                 id='message'
                 rows='7'
                 name='message'
+                required
                 onChange={(e) => setMessage(e.target.value)}
               />
             </div>
