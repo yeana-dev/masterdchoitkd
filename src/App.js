@@ -10,14 +10,14 @@ import ContactUs from './screens/ContactUs';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Layout>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/programs" element={<Programs />} />
-          <Route path="/schedule" element={<Schedule />} />
-          <Route path="/contact-us" element={<ContactUs />} />
+          <Route exact path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/programs' element={<Programs />} />
+          <Route path='/schedule' element={<Schedule />} />
+          <Route path='/contact-us' element={<ContactUs />} />
         </Routes>
       </Layout>
     </div>
