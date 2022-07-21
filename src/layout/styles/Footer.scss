@@ -11,6 +11,11 @@ footer {
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      margin: 0 40px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -24,6 +29,10 @@ footer {
       background-size: 300px;
       background-repeat: no-repeat;
       background-position: center;
+
+      @media screen and (max-width: 992px) {
+        opacity: .3;
+      }
     }
 
     .footer-menu {
@@ -33,21 +42,29 @@ footer {
         flex-direction: column;
         justify-content: space-between;
 
-        li {
-          list-style: none;
+        @media screen and (max-width: 992px) {
+          order: 2;
+        }
 
-          a {
-            text-decoration: none;
-            color: white;
-            font-size: 14px;
+        ul {
+          padding: 0;
 
-            &:hover {
-              text-decoration: underline;
+          li {
+            list-style: none;
+
+            a {
+              text-decoration: none;
+              color: white;
+              font-size: 14px;
+
+              &:hover {
+                text-decoration: underline;
+              }
             }
-          }
 
-          &:not(:last-child) {
-            margin-bottom: 15px;
+            &:not(:last-child) {
+              margin-bottom: 15px;
+            }
           }
         }
 
@@ -59,15 +76,27 @@ footer {
       &__right {
         text-align: right;
 
+        @media screen and (max-width: 992px) {
+          text-align: left;
+          margin-bottom: 40px;
+        }
+
         h2,
         h3 {
           font-family: 'Rubik', sans-serif;
           margin: 10px 0;
         }
 
+        @media screen and (max-width: 992px) {
+          h3 {
+            margin-top: 40px;
+          }
+        }
+
         p {
           font-size: 14px;
           line-height: 30px;
+          margin: 0;
 
           a {
             color: white;
