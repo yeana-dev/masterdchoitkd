@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 115px;
   padding: 0 30px;
 
   &__logo {
@@ -20,20 +19,33 @@
     display: flex;
     align-items: center;
 
-    ul {
+    .nav-item {
       display: flex;
       gap: 40px;
       padding: 0;
+      margin: 0;
 
-      li {
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        background-color: white;
+        gap: 30px;
+        width: 100%;
+        border-radius: 10px;
+        padding: 35px;
+      }
+
+      a {
         list-style: none;
         text-transform: uppercase;
         font-family: 'Rubik', sans-serif;
         font-weight: 600;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        padding: 0 !important;
 
-        a {
-          text-decoration: none;
-          color: black;
+        @media screen and (max-width: 992px) {
+          width: 100%;
         }
       }
     }
