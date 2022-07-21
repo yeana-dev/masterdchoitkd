@@ -44,11 +44,11 @@ export default function Footer() {
           </p>
           <p>
             <a
-              href='mailto:info@masterdchoi.com'
+              href='mailto:info@masterdchoitkd.com'
               target='_blank'
               rel='noreferrer'
             >
-              info@masterdchoi.com
+              info@masterdchoitkd.com
             </a>
           </p>
           <h3>Hours</h3>
