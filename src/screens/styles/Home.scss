@@ -1,7 +1,7 @@
 .home {
   &__overlay,
   &__header-text {
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 155px);
     display: flex;
     flex-direction: column;
