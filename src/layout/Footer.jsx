@@ -40,7 +40,7 @@ export default function Footer() {
             </a>
           </p>
           <p>
-            <a href='tel:832-282-8633'>(832) 282-8633</a>
+            <a href='tel:832-282-8633'>(346) 350-5868</a>
           </p>
           <p>
             <a
