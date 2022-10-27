@@ -80,7 +80,7 @@ export default function ContactUs() {
           <div className='call'>
             <h3>Call</h3>
             <p>
-              <a href='tel:832-282-8633'>(832) 282-8633</a>
+              <a href='tel:346-350-5868'>(346) 350-5868</a>
             </p>
           </div>
         </section>
