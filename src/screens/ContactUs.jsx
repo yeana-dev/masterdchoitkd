@@ -43,7 +43,7 @@ export default function ContactUs() {
       <div className='contact-us__top'>
         <section className='contact-us__top--left'>
           <div className='hours'>
-            <h3>Hourss</h3>
+            <h3>Hours</h3>
             <div className='hours--info'>
               <p>
                 <span>
