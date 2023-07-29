@@ -8,7 +8,7 @@ export default function Home() {
       <div className='home__overlay'>
         <section className='home__header-text'>
           <h1>Welcome to Master D. Choi Taekwondo!</h1>
-          <h2>Coming to Richmond, TX</h2>
+          <h2>Now serving Richmond, Texas</h2>
           <Link to='/contact-us'>
             <button>Click to contact us!</button>
           </Link>
