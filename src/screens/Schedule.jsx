@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import class_schedule from '../assets/class_schedule.jpg'
+import class_schedule from '../assets/class_schedule.png'
 
 import './styles/Schedule.scss';
 
