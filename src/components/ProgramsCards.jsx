@@ -1,4 +1,4 @@
-import adult from '../assets/adult.jpg';
+import adult from '../assets/teen_adult.jpg';
 import family from '../assets/family.jpg';
 import little_tiger from '../assets/little_tiger.jpg';
 import youth from '../assets/youth.jpg';
@@ -39,7 +39,7 @@ export default function ProgramsCards() {
         </div>
         <div className='program-card'>
           <img src={adult} alt='little tiger' />
-          <h2>Adult</h2>
+          <h2>Teen & Adult</h2>
           <section>
             <p>
               In addition to the physical health improvements, Taekwondo is also
